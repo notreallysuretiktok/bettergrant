@@ -1,5 +1,9 @@
 # Website
 
+**Domain:** [braveartinitiative.com](https://braveartinitiative.com) (registered, hosted on GoDaddy)
+
+**Worth grabbing:** `braveartinitiative.org` was still unregistered as of 2026-10-21. Most donors expect a nonprofit to be on .org, so register it and forward it to the .com before someone else takes it.
+
 ## Step 1: Which GoDaddy product is it?
 
 Log in to GoDaddy, open **My Products**, and see which of these the site is under. It changes how we build.
