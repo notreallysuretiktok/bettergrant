@@ -4,6 +4,21 @@
 
 **Worth grabbing:** `braveartinitiative.org` was still unregistered as of 2026-10-21. Most donors expect a nonprofit to be on .org, so register it and forward it to the .com before someone else takes it.
 
+## The site
+
+Version 1 is in `site/`: a single page with no build step. To preview it, open `site/index.html` in a browser.
+
+```
+site/
+  index.html     ← all page content
+  styles.css     ← colors, fonts, layout
+  favicon.svg
+  fonts/         ← Bebas Neue, Cormorant Garamond, Inter (self-hosted, SIL Open Font License)
+  images/        ← covers + og-image.jpg (the preview image when the link is shared)
+```
+
+**Still to add before or soon after launch:** a contact email, a Donate button, and a photo of Drew. Search `TODO` in `index.html`.
+
 ## Step 1: Which GoDaddy product is it?
 
 Log in to GoDaddy, open **My Products**, and see which of these the site is under. It changes how we build.
