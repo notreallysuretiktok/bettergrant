@@ -36,7 +36,11 @@ Repo → **Settings** → **Pages** → under *Build and deployment*, set **Sour
 Merge the pull request. The site goes live at `https://notreallysuretiktok.github.io/bettergrant/` within a couple of minutes (check the **Actions** tab).
 If the first run fails because Pages wasn't on yet, open **Actions** → **Deploy website** → **Run workflow**.
 
-**3. Point the domain at GitHub (in GoDaddy)**
+**3. Add the domain in GitHub first**
+Repo → **Settings** → **Pages** → **Custom domain**: `braveartinitiative.com` → **Save**.
+Do this before changing DNS, so nobody else can claim the domain on GitHub in between.
+
+**4. Point the domain at GitHub (in GoDaddy)**
 GoDaddy → **My Products** → braveartinitiative.com → **DNS** → *DNS Records*:
 
 | Type | Name | Value |
@@ -51,9 +55,7 @@ GoDaddy → **My Products** → braveartinitiative.com → **DNS** → *DNS Reco
 - Delete any other `@` A records, and turn off **Forwarding** for the domain if it's on.
 - If GoDaddy says a record is managed by *Websites + Marketing*, disconnect the domain from that site first.
 
-**4. Connect the domain in GitHub**
-Repo → **Settings** → **Pages** → **Custom domain**: `braveartinitiative.com` → **Save**.
-Once the DNS check passes, tick **Enforce HTTPS**. DNS can take from minutes to a few hours, and the HTTPS certificate up to about an hour after that.
+Back in **Settings** → **Pages**, once the DNS check passes, tick **Enforce HTTPS**. DNS can take from minutes to a few hours, and the HTTPS certificate up to about an hour after that.
 
 **Recommended:** verify the domain under your GitHub account's **Settings** → **Pages** so nobody else can ever attach it to their own GitHub site.
 
