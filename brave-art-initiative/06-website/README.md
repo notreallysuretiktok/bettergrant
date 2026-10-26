@@ -17,7 +17,11 @@ site/
   images/        ← covers + og-image.jpg (the preview image when the link is shared)
 ```
 
-**Still to add before or soon after launch:** a contact email, a Donate button, and a photo of Drew. Search `TODO` in `index.html`.
+**Contact:** braveartinitiative@gmail.com. **Donate:** Cash App [$streetsoldiersmn](https://cash.app/$streetsoldiersmn), linked from the header and the Connect section.
+
+**Fundraising goal:** $25,000, shown in the Connect section. Cash App can't report totals to the site, so progress is updated by hand: in `index.html`, find `goal-progress`, remove `hidden`, and set the percent and amount (instructions are in the comment there).
+
+**Still to add:** a photo of Drew.
 
 ## Going live (GitHub Pages)
 
