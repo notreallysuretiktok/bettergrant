@@ -218,6 +218,20 @@ a { color: var(--gold-hi); }
 .connect-note strong { color: var(--cream); font-weight: 600; }
 .connect-note a { color: var(--gold-hi); }
 
+.goal {
+  max-width: 560px; margin: 0 auto 36px; padding: 32px 28px;
+  border: 1px solid rgba(201, 161, 74, 0.45); border-radius: 6px;
+  background: linear-gradient(160deg, rgba(201, 161, 74, 0.12), rgba(201, 161, 74, 0.02) 60%);
+}
+.goal .eyebrow { margin-bottom: 4px; }
+.goal-amount { margin: 0; font-family: var(--display); font-size: clamp(4rem, 12vw, 6rem); line-height: 1; letter-spacing: 0.01em; }
+.goal-text { margin: 10px auto 0; max-width: 36ch; color: var(--muted); }
+.goal-progress { margin-top: 24px; }
+.goal-bar { height: 10px; border-radius: 999px; background: rgba(241, 234, 217, 0.12); overflow: hidden; }
+.goal-bar span { display: block; height: 100%; width: var(--progress, 0%); border-radius: inherit; background: linear-gradient(90deg, var(--gold), var(--gold-hi)); }
+.goal-raised { margin: 10px 0 0; font-size: 0.9rem; color: var(--muted); }
+.goal-raised strong { color: var(--cream); }
+
 /* Footer */
 
 .site-footer { border-top: 1px solid var(--line); padding: 48px 0; }

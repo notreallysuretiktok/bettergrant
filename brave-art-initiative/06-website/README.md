@@ -19,6 +19,8 @@ site/
 
 **Contact:** braveartinitiative@gmail.com. **Donate:** Cash App [$streetsoldiersmn](https://cash.app/$streetsoldiersmn), linked from the header and the Connect section.
 
+**Fundraising goal:** $25,000, shown in the Connect section. Cash App can't report totals to the site, so progress is updated by hand: in `index.html`, find `goal-progress`, remove `hidden`, and set the percent and amount (instructions are in the comment there).
+
 **Still to add:** a photo of Drew.
 
 ## Going live (GitHub Pages)
