@@ -17,7 +17,9 @@ site/
   images/        ← covers + og-image.jpg (the preview image when the link is shared)
 ```
 
-**Still to add before or soon after launch:** a contact email, a Donate button, and a photo of Drew. Search `TODO` in `index.html`.
+**Contact:** braveartinitiative@gmail.com. **Donate:** Cash App [$streetsoldiersmn](https://cash.app/$streetsoldiersmn), linked from the header and the Connect section.
+
+**Still to add:** a photo of Drew.
 
 ## Going live (GitHub Pages)
 

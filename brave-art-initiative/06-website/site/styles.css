@@ -214,6 +214,9 @@ a { color: var(--gold-hi); }
 }
 .connect .lead { margin-left: auto; margin-right: auto; }
 .connect .actions { justify-content: center; }
+.connect-note { margin: 28px 0 0; font-size: 0.9rem; line-height: 1.7; color: var(--muted); }
+.connect-note strong { color: var(--cream); font-weight: 600; }
+.connect-note a { color: var(--gold-hi); }
 
 /* Footer */
 
