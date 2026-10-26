@@ -1,6 +1,6 @@
 # Website
 
-**Domain:** [braveartinitiative.com](https://braveartinitiative.com) (registered, hosted on GoDaddy)
+**Domain:** [braveartinitiative.com](https://braveartinitiative.com): registered at GoDaddy, served free from GitHub Pages
 
 **Worth grabbing:** `braveartinitiative.org` was still unregistered as of 2026-10-21. Most donors expect a nonprofit to be on .org, so register it and forward it to the .com before someone else takes it.
 
@@ -19,15 +19,43 @@ site/
 
 **Still to add before or soon after launch:** a contact email, a Donate button, and a photo of Drew. Search `TODO` in `index.html`.
 
-## Step 1: Which GoDaddy product is it?
+## Going live (GitHub Pages)
 
-Log in to GoDaddy, open **My Products**, and see which of these the site is under. It changes how we build.
+Any change to `site/` that lands on `main` is published automatically by `.github/workflows/deploy-website.yml`.
 
-| GoDaddy product | How we'd build it |
-|---|---|
-| **Websites + Marketing** (drag-and-drop builder) | You can't upload custom code. We write the copy, prep web-sized images, and lay out each section so you can rebuild it in the editor. |
-| **Web Hosting (cPanel)** | Full custom site built in this repo. You upload it through cPanel File Manager, or we set it to deploy automatically from GitHub. |
-| **Managed WordPress** | Pick a theme, then we write the pages and you paste them in, or we build a custom theme. |
+### One-time setup
+
+**1. Turn on Pages in GitHub**
+Repo → **Settings** → **Pages** → under *Build and deployment*, set **Source** to **GitHub Actions**.
+
+**2. Get the site onto `main`**
+Merge the pull request. The site goes live at `https://notreallysuretiktok.github.io/bettergrant/` within a couple of minutes (check the **Actions** tab).
+If the first run fails because Pages wasn't on yet, open **Actions** → **Deploy website** → **Run workflow**.
+
+**3. Point the domain at GitHub (in GoDaddy)**
+GoDaddy → **My Products** → braveartinitiative.com → **DNS** → *DNS Records*:
+
+| Type | Name | Value |
+|---|---|---|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | notreallysuretiktok.github.io |
+
+- Edit the existing `@` A record (it may say *Parked*) to the first IP, then add the other three.
+- Delete any other `@` A records, and turn off **Forwarding** for the domain if it's on.
+- If GoDaddy says a record is managed by *Websites + Marketing*, disconnect the domain from that site first.
+
+**4. Connect the domain in GitHub**
+Repo → **Settings** → **Pages** → **Custom domain**: `braveartinitiative.com` → **Save**.
+Once the DNS check passes, tick **Enforce HTTPS**. DNS can take from minutes to a few hours, and the HTTPS certificate up to about an hour after that.
+
+**Recommended:** verify the domain under your GitHub account's **Settings** → **Pages** so nobody else can ever attach it to their own GitHub site.
+
+### Updating the site later
+
+Edit files in `site/`, then merge to `main`. It republishes on its own.
 
 ## Sitemap (draft)
 
